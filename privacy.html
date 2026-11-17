@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071632">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Learn how Deep Morning handles account, focus, calendar, and community information, and how to manage your privacy choices.">
+  <title>Privacy Policy | Deep Morning</title>
+  <link rel="icon" type="image/png" href="deep-morning-icon.png">
+  <style>
+    :root{color-scheme:dark;--bg:#071632;--panel:#11264b;--text:#f7f9ff;--muted:#b6c6e0;--soft:#8fa8c8;--line:rgba(168,203,250,.18);--blue:#99d4ff;--teal:#86e2d5;--inner:1040px}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:24px}
+    body{margin:0;min-height:100vh;color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;font-size:15px;line-height:1.72;background:radial-gradient(ellipse 52% 29% at 103% 12%,rgba(26,109,145,.32),transparent 80%),radial-gradient(ellipse 46% 38% at -12% 52%,rgba(85,47,148,.28),transparent 80%),radial-gradient(ellipse 65% 27% at 62% -12%,rgba(44,96,177,.25),transparent 80%),var(--bg)}
+    a{color:#9dd8ff;text-decoration-thickness:1px;text-underline-offset:3px}
+    a:hover{color:white}
+    :focus-visible{outline:3px solid var(--teal);outline-offset:4px;border-radius:4px}
+    .skip{position:absolute;left:-10000px;top:12px;z-index:100;background:#fff;color:#00132a;padding:10px 16px;border-radius:8px}
+    .skip:focus{left:18px}
+    .wrap{width:min(100% - 44px,var(--inner));margin:0 auto}
+    .top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:27px 0;border-bottom:1px solid var(--line)}
+    .identity{display:inline-flex;align-items:center;gap:12px;color:var(--text);font-weight:780;font-size:16px;letter-spacing:-.025em;text-decoration:none}
+    .identity img{height:43px;width:43px;border-radius:12px;object-fit:cover;box-shadow:0 4px 15px #0108197a}
+    .nav{display:flex;align-items:center;gap:23px;font-size:13px;font-weight:650}
+    .nav a{color:#bad2ed;text-decoration:none}
+    .nav a:hover{color:#fff}
+    .hero{position:relative;padding:78px 0 57px;border-bottom:1px solid var(--line)}
+    .pill{display:inline-flex;align-items:center;gap:8px;color:#b2d5fc;letter-spacing:.16em;font-size:11px;font-weight:800;text-transform:uppercase;border:1px solid rgba(150,196,248,.24);border-radius:100px;padding:7px 13px;background:rgba(21,55,100,.34)}
+    .dot{width:7px;height:7px;border-radius:50%;background:#8cd7d4;box-shadow:0 0 12px #8cd7d499}
+    h1{font-size:clamp(43px,7vw,72px);line-height:1.08;letter-spacing:-.055em;margin:20px 0 16px;font-weight:810}
+    h1 span{color:#96cff8}
+    .subhead{font-size:clamp(16px,2.2vw,19px);line-height:1.7;color:#c9d7ec;max-width:665px;margin:0}
+    .meta{display:flex;flex-wrap:wrap;gap:9px 20px;margin-top:30px;color:#9cb6d5;font-size:12px;letter-spacing:.015em}
+    .meta strong{color:#d2e3f8;font-weight:700}
+    .hero-mark{position:absolute;right:34px;top:96px;width:115px;height:115px;opacity:.28;filter:drop-shadow(0 12px 38px #1f8cd677);border-radius:26px;transform:rotate(-8deg)}
+    .summary{margin:37px 0 0;padding:28px 31px;border:1px solid rgba(137,206,255,.28);border-radius:22px;background:linear-gradient(124deg,rgba(27,66,112,.65),rgba(15,33,68,.88));box-shadow:0 12px 50px #020c2233}
+    .summary h2{font-size:13px;letter-spacing:.17em;text-transform:uppercase;color:#a9d5fa;margin:0 0 13px}
+    .summary-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+    .summary-item strong{display:block;font-weight:770;font-size:15px;margin-bottom:5px;line-height:1.45}
+    .summary-item p{color:#bcd0e8;font-size:13px;line-height:1.65;margin:0}
+    .body-layout{display:grid;grid-template-columns:210px minmax(0,1fr);gap:66px;padding:58px 0 80px}
+    .toc{align-self:start;position:sticky;top:25px}
+    .toc h2{margin:0 0 15px;font-size:11px;letter-spacing:.18em;color:#9fbedc;text-transform:uppercase}
+    .toc a{display:block;text-decoration:none;color:#b4c6e0;font-size:12px;line-height:1.45;padding:8px 0;border-left:2px solid transparent;padding-left:14px}
+    .toc a:hover,.toc a:focus{color:white;border-left-color:#5fc7f8}
+    article{min-width:0}
+    section{padding:0 0 29px;margin-bottom:32px;border-bottom:1px solid var(--line)}
+    section h2{font-size:clamp(23px,2.6vw,28px);letter-spacing:-.03em;line-height:1.22;font-weight:780;margin:0 0 15px}
+    section h3{font-size:16px;font-weight:740;margin:23px 0 8px;color:#dff0ff}
+    section p{margin:0 0 13px;color:var(--muted)}
+    section p:last-child{margin-bottom:0}
+    ul,ol{padding-left:21px;margin:10px 0 17px;color:var(--muted)}
+    li{margin:7px 0;padding-left:3px}
+    strong{color:#eef7ff}
+    .note{padding:16px 19px;margin:19px 0;border-left:3px solid #66c5ff;background:rgba(49,86,133,.28);border-radius:0 11px 11px 0;color:#cce0f7;font-size:13px;line-height:1.65}
+    .note strong{color:#e4f4ff}
+    .contact-box{margin-top:5px;padding:25px 27px;border:1px solid rgba(128,195,254,.27);border-radius:20px;background:linear-gradient(135deg,rgba(34,63,109,.82),rgba(13,34,73,.9))}
+    .contact-box h2{margin-bottom:9px}
+    .contact-box p{font-size:14px;line-height:1.7;color:#c9d9ee}
+    .email{display:inline-flex;align-items:center;gap:10px;padding:11px 17px;border-radius:11px;background:#168cf0;color:white;text-decoration:none;font-size:14px;font-weight:740;margin-top:12px}
+    .email:hover{background:#36a1ff;color:white}
+    footer{border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:15px;color:#8aa7c9;padding:26px 0 32px;font-size:12px}
+    footer a{text-decoration:none}
+    @media(max-width:850px){.hero-mark{width:88px;height:88px;right:15px;top:58px;opacity:.18}.body-layout{grid-template-columns:1fr;gap:26px;padding-top:35px}.toc{position:static;border-bottom:1px solid var(--line);padding-bottom:20px}.toc-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:10px}.toc a{padding-top:6px;padding-bottom:6px}.summary-grid{gap:14px}}
+    @media(max-width:570px){.wrap{width:min(100% - 34px,var(--inner))}.top{padding:19px 0}.identity img{height:39px;width:39px}.nav{gap:13px;font-size:12px}.hero{padding:54px 0 40px}.hero-mark{display:none}.meta{margin-top:21px}.summary{padding:22px 20px;margin-top:29px}.summary-grid{grid-template-columns:1fr;gap:17px}.body-layout{padding-bottom:40px}.toc-links{grid-template-columns:1fr 1fr}.toc a{font-size:11px;padding-left:9px}.contact-box{padding:21px}.email{max-width:100%;overflow-wrap:anywhere}footer{flex-direction:column;text-align:center}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+    @media print{body{background:white;color:#10213b}.wrap{width:100%;max-width:none}.top,.toc,.hero-mark,.email,footer{display:none}.hero{padding:14px 0}.summary{box-shadow:none;background:#fff;border:1px solid #ccc}.summary-item p,section p,li{color:#25334a}.meta,.subhead{color:#555}.body-layout{display:block;padding:20px 0}.contact-box{background:white;border:1px solid #ccc}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to privacy information</a>
+  <div class="wrap">
+    <header class="top">
+      <a class="identity" href="./" aria-label="Deep Morning Support home">
+        <img src="deep-morning-icon.png" alt="Deep Morning app icon" width="43" height="43">
+        <span>Deep Morning</span>
+      </a>
+      <nav class="nav" aria-label="Site navigation">
+        <a href="./">Support</a>
+        <a href="mailto:liverdom@icloud.com?subject=Deep%20Morning%20Privacy">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <div class="hero">
+        <span class="pill"><span class="dot" aria-hidden="true"></span> Trust &amp; Transparency</span>
+        <h1>Your focus.<br><span>Your privacy.</span></h1>
+        <p class="subhead">We believe better productivity should come with clear choices about your information. Here is what Deep Morning uses, what stays on your device, and how you stay in control.</p>
+        <div class="meta"><span><strong>Privacy Policy</strong> · Deep Morning</span><span>Last updated: <strong>November 17, 2026</strong></span></div>
+        <img class="hero-mark" src="deep-morning-icon.png" alt="" aria-hidden="true" width="115" height="115">
+      </div>
+
+      <aside class="summary" aria-label="Privacy at a glance">
+        <h2>Privacy at a glance</h2>
+        <div class="summary-grid">
+          <div class="summary-item"><strong>Local where practical</strong><p>Your focus timer and detailed session history are primarily stored on your device.</p></div>
+          <div class="summary-item"><strong>Connections are optional</strong><p>You choose whether to connect calendars, use image import, or authorize Focus Protection.</p></div>
+          <div class="summary-item"><strong>Sharing is your choice</strong><p>Profiles, community posts, and optional friend features have their own visibility and sharing controls.</p></div>
+        </div>
+      </aside>
+
+      <div class="body-layout">
+        <nav class="toc" aria-label="Privacy policy contents">
+          <h2>On this page</h2>
+          <div class="toc-links">
+            <a href="#overview">01. Who we are</a>
+            <a href="#information">02. Data we handle</a>
+            <a href="#calendars">03. Calendars &amp; imports</a>
+            <a href="#protection">04. Focus Protection</a>
+            <a href="#community">05. Community visibility</a>
+            <a href="#use">06. How we use data</a>
+            <a href="#services">07. Service providers</a>
+            <a href="#storage">08. Storage &amp; retention</a>
+            <a href="#choices">09. Your choices</a>
+            <a href="#deletion">10. Delete your account</a>
+            <a href="#security">11. Security</a>
+            <a href="#children">12. Children</a>
+            <a href="#international">13. International users</a>
+            <a href="#changes">14. Policy changes</a>
+            <a href="#contact">15. Contact</a>
+          </div>
+        </nav>
+
+        <article>
+          <section id="overview">
+            <h2>01. Who we are</h2>
+            <p>This Privacy Policy explains how <strong>Deep Morning</strong>, an independently developed productivity application operated by <strong>Taketo Horigome</strong> ("Deep Morning," "we," "our"), handles information when you use the Deep Morning mobile app, its connected features, and this support website.</p>
+            <p>Questions or requests about privacy can be sent to <a href="mailto:liverdom@icloud.com?subject=Deep%20Morning%20Privacy">liverdom@icloud.com</a>.</p>
+          </section>
+
+          <section id="information">
+            <h2>02. Information we handle</h2>
+            <h3>Account and profile</h3>
+            <p>When you create an account, our authentication provider processes your email address, sign-in credentials, account identifiers, and authentication information. Deep Morning may store your display name, username, time zone, profile picture, biography, school or work information, hobbies, goals, profile visibility settings, and onboarding preferences that you choose to provide.</p>
+            <h3>Focus, tasks, and planning</h3>
+            <p>The app stores study subjects, plans, focus-session history, duration, pauses, ratings, interruption counts, and related productivity information primarily in an on-device database. Some features, including synchronized study tasks, task progress, calendar events created or imported into Deep Morning, optional friend boosts, and onboarding settings, also use our cloud backend.</p>
+            <h3>Coach and recommendations</h3>
+            <p>Deep Morning Coach can use the focus tasks, goals, schedule, and progress information available to the app to generate planning suggestions. The current coaching interface is intended to support productivity, rather than to advertise to you. Information you choose to send through a connected service may be processed to provide the requested feature.</p>
+            <h3>Information you choose to share</h3>
+            <p>If you use the community features, we process content you explicitly publish, such as focus summaries, captions, comments, reactions, follows, and profile information made visible according to your settings. Reports and blocking information are also used to help manage the community.</p>
+            <h3>Technical information</h3>
+            <p>Our service providers may receive technical information needed to operate their services, such as IP addresses, request timestamps, authentication events, and error or security logs. This website itself does not load advertising scripts or site analytics trackers.</p>
+          </section>
+
+          <section id="calendars">
+            <h2>03. Calendar connections and image imports</h2>
+            <p><strong>iPhone Calendar:</strong> With your permission, Deep Morning reads events from the calendars you select to display your schedule and suggest available focus time. The iPhone Calendar integration reads those events on your device; it does not copy the selected iPhone calendar feed into Supabase or modify your Apple Calendar events.</p>
+            <p><strong>Google Calendar:</strong> If connected, the app uses Google-authorized, read-only calendar access to retrieve events from calendars you select. The short-lived access token and calendar selection are stored on your device. Google events are shown in your schedule rather than copied into Deep Morning's cloud database by this connection. We use information received from Google Calendar only to provide calendar and related focus-planning features, not for advertising or to train general-purpose AI models.</p>
+            <p><strong>Canvas Calendar:</strong> If you connect a Canvas calendar feed, the app downloads the feed and sends calendar contents to our Supabase-backed synchronization service to create and update events in your account. New connections store the private feed address in secure storage on the device; connection metadata and imported events can be retained by our backend. Treat a Canvas feed URL as private.</p>
+            <p><strong>Schedule screenshot import:</strong> When you choose an image for schedule recognition, Deep Morning sends the selected image over an authenticated connection to its schedule-reading/OCR service. The application code reads and analyzes the image in memory and returns extracted text and suggested calendar events for your review. It does not intentionally write or archive the original uploaded image in a permanent image store. Infrastructure may use temporary buffers and retain technical request or error logs; we have not verified every hosting-level backup or logging configuration. If you accept suggested events, those events may be stored in your Deep Morning calendar. Upload only screenshots you are comfortable submitting for processing.</p>
+            <div class="note"><strong>Your choice:</strong> Calendar access and image import are optional. You can disconnect calendars inside the app and revoke iPhone permissions in iOS Settings. Disconnecting a source may not automatically delete events that were previously imported into your Deep Morning calendar.</div>
+          </section>
+
+          <section id="protection">
+            <h2>04. Focus Protection and Screen Time</h2>
+            <p>On supported Apple devices, Focus Protection uses Apple's Family Controls, Managed Settings, and Device Activity technologies to help restrict selected apps and websites during focus sessions. You choose whether to authorize these features and which apps, categories, or websites to protect.</p>
+            <p>Apple's authorization and protected-app selections are handled through iOS and app/extension storage on your device. Deep Morning can record local session-related events, such as focus exits and shield interactions, to calculate your focus statistics. We do not use protected-app selections to serve targeted advertisements.</p>
+            <p>The current app does not provide a general report of all of your device's Screen Time or detailed app-by-app website usage history. You can change or revoke Screen Time permissions in your iPhone settings.</p>
+          </section>
+
+          <section id="community">
+            <h2>05. Community visibility</h2>
+            <p>Deep Morning includes optional discovery, following, sharing, comments, and friend-boost features. If you make your profile discoverable, other signed-in members may see your display name, username, and profile fields permitted by your visibility settings. Your public profile photo is served through a publicly readable image URL and may be accessible to anyone who has that link.</p>
+            <p>Focus-session details are not automatically posted to the Feed. When you explicitly share a session, the associated details become visible to the audience allowed by the community's access rules. Other users may copy or capture information that you choose to share.</p>
+            <p>Optional friend-boost comparisons can use daily focus-minute totals stored in our backend when you opt in. The feature is designed to share encouragement and limited comparison information rather than exposing another person's complete session history.</p>
+          </section>
+
+          <section id="use">
+            <h2>06. How we use information</h2>
+            <ul>
+              <li>To create and secure your account and save your chosen profile settings.</li>
+              <li>To run focus sessions, provide recommendations, display your calendar, and calculate progress.</li>
+              <li>To process optional calendar connections and schedule images that you submit.</li>
+              <li>To support voluntary social sharing, friend connections, boosts, reporting, and moderation.</li>
+              <li>To answer support requests, troubleshoot failures, prevent misuse, and protect the service.</li>
+              <li>To meet applicable legal obligations and maintain the safety and integrity of Deep Morning.</li>
+            </ul>
+            <p><strong>We do not sell your personal information.</strong> The current app does not integrate third-party behavioral advertising SDKs, and Deep Morning does not use your calendar data or Focus Protection selections for targeted advertising.</p>
+          </section>
+
+          <section id="services">
+            <h2>07. Service providers and integrations</h2>
+            <p>We use third-party services only when needed to provide features you use or to operate the service. These may include:</p>
+            <ul>
+              <li><strong>Supabase:</strong> authentication, cloud database, profile image storage, calendar synchronization, and server-side functions. <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">Privacy information</a>.</li>
+              <li><strong>Apple:</strong> device calendars, notifications, and Family Controls/Screen Time permissions managed by iOS. <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Privacy information</a>.</li>
+              <li><strong>Google:</strong> Google Calendar authorization and event retrieval, only if you connect it. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy information</a>.</li>
+              <li><strong>Deep Morning schedule-reading service:</strong> processes schedule images you choose to upload for event extraction; infrastructure providers supporting that service may process technical logs.</li>
+              <li><strong>GitHub Pages:</strong> hosts this public privacy and support website and may process ordinary web request information. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">Privacy information</a>.</li>
+            </ul>
+            <p>We expect providers handling information on our behalf to apply appropriate contractual, technical, and organizational protections consistent with applicable law. Their independent services may also be subject to their own privacy policies.</p>
+          </section>
+
+          <section id="storage">
+            <h2>08. Storage and retention</h2>
+            <p><strong>On-device information:</strong> Your local session records, preferences, and securely stored connection credentials remain on your device until you remove them, reset the app, disconnect an integration, or uninstall Deep Morning, subject to iOS backup and device behavior.</p>
+            <p><strong>Cloud information:</strong> Account records, profile information, shared community data, synced tasks, imported calendars, and related settings may remain in our cloud systems while your account is active or as needed to provide a requested service. User-generated content may remain visible until you remove it or it is removed through moderation.</p>
+            <p><strong>Account deletion:</strong> You can permanently delete your account inside Deep Morning under <strong>Settings &rarr; Delete Your Account</strong>. The authenticated deletion process removes the account from Supabase Authentication and the related database records linked to the account through cascading deletion, including your profile, community posts and comments, cloud tasks, and stored calendar connections and events. It also removes profile photos held in the user-owned folder in our profile image storage. The app then attempts to remove locally stored focus and planning records, scheduled reminders, and protected-app selections on the device.</p>
+            <p><strong>Backups, logs and exceptions:</strong> Cloud service providers and hosting systems may temporarily retain backup copies, security logs, or other records under their own operating schedules. Certain information may be retained where needed for legal compliance, fraud prevention, security, or dispute resolution. Content previously copied or independently saved by other users cannot always be recalled. If device cleanup fails after cloud deletion, the app will inform you and you may need to reinstall it. We do not promise immediate deletion from every backup or infrastructure log.</p>
+          </section>
+
+          <section id="choices">
+            <h2>09. Your privacy choices</h2>
+            <ul>
+              <li><strong>Profile:</strong> update your display information and choose whether your profile appears in Discover; control the visibility of supported profile fields.</li>
+              <li><strong>Community:</strong> choose what to publish, delete your posts where available, unfollow others, and use blocking and reporting features.</li>
+              <li><strong>Calendars:</strong> disconnect Google, Canvas, or iPhone Calendar in Deep Morning; revoke iPhone Calendar permissions in iOS Settings.</li>
+              <li><strong>Focus Protection:</strong> adjust protected apps or revoke Family Controls authorization through the device's settings.</li>
+              <li><strong>Notifications:</strong> manage local notification permissions through Deep Morning or iOS Settings.</li>
+              <li><strong>Delete your account:</strong> open <strong>Settings &rarr; Delete Your Account</strong> and complete the confirmation steps. You do not need to email support to use the in-app deletion flow.</li>
+              <li><strong>Data requests:</strong> for questions, requests to access or correct personal data, or help if deletion fails, email <a href="mailto:liverdom@icloud.com?subject=Deep%20Morning%20Data%20Request">liverdom@icloud.com</a>. Do not send passwords or authentication codes.</li>
+            </ul>
+            <p>We will review requests in accordance with applicable law and may ask you to confirm account ownership. Some rights depend on your jurisdiction.</p>
+          </section>
+
+          <section id="deletion">
+            <h2>10. How to delete your account</h2>
+            <p>Deep Morning provides a direct, permanent account-deletion option to signed-in users:</p>
+            <ol>
+              <li>Open <strong>Deep Morning &rarr; Settings</strong>.</li>
+              <li>Under <strong>Account</strong>, tap <strong>Delete Your Account</strong>.</li>
+              <li>Read the deletion explanation, type <strong>DELETE</strong>, and confirm the permanent deletion.</li>
+            </ol>
+            <p>The request is authenticated using your signed-in account. When successful, the backend deletes the account and associated cloud records as described above, and the app signs you out after attempting on-device cleanup. You cannot restore a deleted account or its focus history through the app.</p>
+            <p>If the feature does not complete or you cannot access your account, email <a href="mailto:liverdom@icloud.com?subject=Deep%20Morning%20Account%20Deletion">liverdom@icloud.com</a> for assistance. We may need to verify your account ownership before processing a support request. We will handle requests as required by applicable law.</p>
+          </section>
+
+          <section id="security">
+            <h2>11. Security</h2>
+            <p>Deep Morning uses safeguards appropriate to its services, including authenticated access, encrypted network connections, access restrictions on cloud data, and secure device storage for certain connection credentials. Some information you intentionally publish, including publicly accessible profile images, is not private. No internet service or device storage system can guarantee absolute security.</p>
+            <p>For security reports or suspected unauthorized access, contact <a href="mailto:liverdom@icloud.com?subject=Deep%20Morning%20Security">liverdom@icloud.com</a>.</p>
+          </section>
+
+          <section id="children">
+            <h2>12. Children's privacy</h2>
+            <p>Deep Morning is a general productivity app and is not designed for children under 13. We do not knowingly seek personal information from children under 13. If you believe a child has provided information that should be removed, contact us so we can review the request.</p>
+          </section>
+
+          <section id="international">
+            <h2>13. International use</h2>
+            <p>If you use Deep Morning outside the country where its service providers operate, information processed by cloud services may be transferred to and stored in other jurisdictions. Applicable privacy protections and legal rights may vary by location.</p>
+          </section>
+
+          <section id="changes">
+            <h2>14. Changes to this policy</h2>
+            <p>We may update this policy to reflect new features, service providers, legal requirements, or changes in our data practices. We will publish the updated version here and revise the "Last updated" date above. If a change materially affects how we handle information, we will provide additional notice when required by law.</p>
+          </section>
+
+          <section id="contact" class="contact-box">
+            <h2>15. Questions? We're here.</h2>
+            <p>Need help understanding how your data is handled, changing your preferences, or requesting account or data deletion? You can reach the developer directly.</p>
+            <a class="email" href="mailto:liverdom@icloud.com?subject=Deep%20Morning%20Privacy%20Request">Email privacy support <span aria-hidden="true">↗</span></a>
+            <p style="font-size:12px;color:#a8bfdc;margin-top:16px">Deep Morning · Taketo Horigome · <span style="overflow-wrap:anywhere">liverdom@icloud.com</span></p>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <footer><span>© 2026 Deep Morning · Built for meaningful focus.</span><span><a href="./">Support</a> &nbsp;·&nbsp; <a href="#main">Back to top ↑</a></span></footer>
+  </div>
+</body>
+</html>
